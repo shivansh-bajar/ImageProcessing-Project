@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            text-align: center;
+            margin: 0;
+            width: 100%;
+    }
+    .form-container{
+        
+        width: 100%;
+        border: 1px solid black;
+        text-align: center;
+    }
+    </style>
+    <title>IMAGE PROCESSING</title>
+    <h3>Shivansh Bajar</h3>
+    <h3>19BCE1638</h3>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Image Compressor</h1>
+        <form class="p-3 text-center", action="/", method="post", enctype="multipart/form-data">
+            <input class="form-control" type="file" name="imagefile"><br><br>
+            <label for="cluster">Enter the number of clusters</label><br>
+            <p>The Number of Clusters will decide how much compression will take place</p>
+            <p>The Lesser the number of clusters, more the compression but it will also effect the quality</p>
+            <input class="form-control" type="number" name="cluster"><br><br>
+            <input class="btn btn-primary mt-3" type="submit" value="Compress Image">
+        </form>
+        <p>Once you start your compression please bear with us as it takes around 4-5 minutes</p>
+    </div>
+</body>
+</html>
